@@ -4,6 +4,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "GitHub Actions -> Docker Hub -> Azure VM Deployment Successful!"
+    return "my auto deployment is working Successful!"
 
 app.run(host='0.0.0.0', port=5000)
