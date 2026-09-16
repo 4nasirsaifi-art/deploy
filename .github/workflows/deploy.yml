@@ -36,4 +36,4 @@ jobs:
             sudo docker stop my-app-container || true
             sudo docker rm my-app-container || true
             sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/my-app:latest
-            sudo docker run -d p 80:500 --name my-app-container -p 80:5000 ${{ secrets.DOCKERHUB_USERNAME }}/my-app:latest
+            sudo docker run -d --name my-app-container -p 80:5000 ${{ secrets.DOCKERHUB_USERNAME }}/my-app:latest
